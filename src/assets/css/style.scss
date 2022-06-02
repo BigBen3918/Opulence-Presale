@@ -1,0 +1,133 @@
+/*color*/
+$white: #fff;
+$gray: grey;
+$black: #111;
+$general: #727272;
+$black_soft: #333;
+$black_col: #2e333c;
+$black_more: #0f0f0f;
+$black_background: #050505;
+$color: #a48b57;
+$color_more: #c5a86a;
+
+* {
+    font-family: "Segoe UI";
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.col-white {
+    color: $white;
+}
+
+.single-spacer {
+    height: 30px;
+}
+
+.double-spacer {
+    height: 60px;
+}
+
+.half-spacer {
+    height: 15px;
+}
+
+.default-color {
+    background-image: linear-gradient(132deg, #3abab4, #55dbd4 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Header Style Begin */
+.menu {
+    a {
+        opacity: 0.8;
+        font-weight: 500;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.footer {
+    padding: 4rem 0;
+    border-top: 1px solid rgb(46, 46, 51);
+}
+
+.footer_items {
+    font-weight: 500;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Header Style End */
+
+/* Dashboard Style Begin */
+.dashboard {
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.bar {
+    width: 100%;
+    height: 7px;
+    background-color: rgb(58, 186, 180);
+    border-radius: 50px;
+}
+
+.circle {
+    min-width: 150px;
+    min-height: 150px;
+    width: 100%;
+    height: 100%;
+}
+
+.joindiscord {
+    padding: 4rem 3rem;
+    border-radius: 5px;
+    background-color: rgb(46, 46, 51);
+}
+
+@media only screen and (max-width: 990px) {
+    .joindiscord {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        padding: 2.5rem 0;
+    }
+    .footer_items {
+        gap: 5px;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+    }
+    .circle {
+        padding: 0 10rem;
+    }
+    .approve {
+        padding: 0 6rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .circle {
+        padding: 0 5rem;
+    }
+    .approve {
+        padding: 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .circle {
+        padding: 0 30px;
+    }
+    .approve {
+        padding: 0;
+    }
+}
+/* Dashboard Style End */
